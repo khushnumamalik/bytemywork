@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khushnuma Malik - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+      .typing-text {
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+        border-right: 2px solid black;
+        animation: typing 3s steps(20, end) infinite alternate;
+      }
+      body {
+        cursor: pointer;
+      }
+      /* Active link style */
+      .active-link {
+        color: #14b8a6; /* Teal color for active link */
+        font-weight: bold;
+      }
+ 
+.scroll {
+    right: 20px;
+}
+
+.scroll, .whatsapp {
+    position: fixed;
+    bottom: 70px;
+    width: 50px;
+}
+    </style>
+  </head>
+  <body
+    class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white dark:bg-gray-100 dark:text-black"
+  >
+  <div class="scroll"><a href="home.html"> <img src="https://ps.w.org/scrollup-master/assets/icon-256x256.png?rev=1058878  "></a></div>
+
+
+    <nav class="bg-gray-800 shadow-md fixed w-full top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-8 flex justify-between items-center"
+      >
+        <a href="home.html"
+          ><h2 class="text-xl font-bold text-teal-400">ByteMyWork</h2>
+        </a>
+        <button
+          id="menu-btn"
+          class="md:hidden text-teal-400 focus:outline-none text-2xl"
+        >
+          ☰
+        </button>
+        <ul
+          id="menu"
+          class="hidden md:flex md:space-x-6 absolute md:relative top-full right-0 md:top-0 md:right-0 md:flex-row bg-gray-800 md:bg-transparent w-1/2 md:w-auto text-center md:text-right p-4 md:p-0"
+        >
+          <li>
+            <a
+              href="#home"
+              class="block px-4 py-2 md:inline hover:text-teal-400"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="block px-4 py-2 md:inline hover:text-teal-400"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="block px-4 py-2 md:inline hover:text-teal-400"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#service"
+              class="block px-4 py-2 md:inline hover:text-teal-400"
+              >Service</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="block px-4 py-2 md:inline hover:text-teal-400"
+              >Contact</a
+            >
+          </li>
+          <!-- <li><button id="dark-mode-toggle" class="px-4 py-2 text-teal-400">🌙</button></li> -->
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="flex flex-col md:flex-row items-center justify-center min-h-screen px-6 md:px-12 pt-20"
+    >
+      <div class="w-full md:w-1/2 flex justify-center">
+        <img
+          src="./assets/images/profile.jpg.jpeg"
+          alt="Khushnuma Malik"
+          class="w-48 h-48 md:w-64 md:h-64 rounded-full shadow-lg border-4 border-teal-400"
+        />
+      </div>
+      <div class="w-full md:w-1/2 text-center md:text-left mt-6 md:mt-0">
+        <h2 class="text-4xl md:text-5xl font-bold text-teal-400">
+          Khushnuma Malik
+        </h2>
+        <p class="text-xl text-teal-300 mt-2 typing-text">
+          Frontend Developer | JavaScript Enthusiast
+        </p>
+        <p class="mt-4 text-gray-300">
+          I build modern, responsive, and dynamic web experiences using
+          JavaScript, Tailwind CSS, and React.
+        </p>
+        <div
+          class="mt-6 flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-4"
+        >
+          <a
+            href="./assets/khushnumaCV.pdf"
+            download
+            class="px-6 py-3 bg-teal-500 text-gray-900 font-bold rounded-full hover:bg-teal-400 shadow-md transition-transform transform hover:scale-105"
+            >Download Resume</a
+          >
+          <a
+            href="#contact"
+            class="px-6 py-3 border border-teal-400 text-teal-400 rounded-full hover:bg-teal-400 hover:text-gray-900 shadow-md transition-transform transform hover:scale-105"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!--about-->
+    <!-- About Page -->
+    <section
+      id="about"
+      class="min-h-screen flex flex-col justify-center items-center text-center px-6 py-24"
+    >
+      <h2 class="text-3xl md:text-4xl font-bold text-teal-400 mb-6">
+        About Me
+      </h2>
+
+      <!-- Education & Experience -->
+      <div class="grid md:grid-cols-2 gap-6 max-w-4xl w-full">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-teal-400 mb-2">Education</h3>
+          <p class="text-gray-300">
+            B.A. in Political Science & English, CCS University, Meerut
+          </p>
+          <p class="text-gray-300">
+            Frontend Development Training, Ducat (7 months)
+          </p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-teal-400 mb-2">Experience</h3>
+          <p class="text-gray-300">Web Design Intern, 6 months</p>
+          <p class="text-gray-300">Intern at Bharat Intern, 2 months</p>
+          <p class="text-gray-300">Intern at Steering Minds, 4 months</p>
+        </div>
+      </div>
+
+      <!-- Skills Section -->
+      <h3 class="text-2xl font-bold text-teal-400 mt-8">Skills</h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-4 max-w-4xl">
+        <div class="bg-gray-800 p-4 rounded-lg shadow-lg text-center">HTML</div>
+        <div class="bg-gray-800 p-4 rounded-lg shadow-lg text-center">CSS</div>
+        <div class="bg-gray-800 p-4 rounded-lg shadow-lg text-center">
+          JavaScript
+        </div>
+        <div class="bg-gray-800 p-4 rounded-lg shadow-lg text-center">
+          Tailwind CSS
+        </div>
+        <div class="bg-gray-800 p-4 rounded-lg shadow-lg text-center">
+          React
+        </div>
+        <div class="bg-gray-800 p-4 rounded-lg shadow-lg text-center">
+          PHP & MySQL
+        </div>
+      </div>
+    </section>
+    <!--project-->
+    <section id="projects" class="py-24 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-teal-400 mb-6">
+        Projects
+      </h2>
+      <div class="flex justify-center gap-4 mb-6">
+        <button
+          class="filter-btn bg-teal-500 px-4 py-2 rounded"
+          data-category="all"
+        >
+          All
+        </button>
+        <button
+          class="filter-btn bg-teal-500 px-4 py-2 rounded"
+          data-category="React"
+        >
+          React
+        </button>
+        <button
+          class="filter-btn bg-teal-500 px-4 py-2 rounded"
+          data-category="JavaScript"
+        >
+          JavaScript
+        </button>
+        <button
+          class="filter-btn bg-teal-500 px-4 py-2 rounded"
+          data-category="Web Design"
+        >
+          Web Design
+        </button>
+      </div>
+      <div
+        class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto"
+        id="project-list"
+      >
+        <div
+          class="project bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition"
+          data-category="React"
+        >
+          <h3 class="text-xl font-bold text-teal-400">Portfolio Website</h3>
+          <p class="text-gray-300">
+            A responsive portfolio website showcasing my projects and skills.
+          </p>
+          <p class="text-gray-400">Technologies: HTML, CSS, JavaScript, React</p>
+          <a href="http://gilded-haupia-e965cc.netlify.app" class="text-teal-400 underline">Live Demo</a>
+        </div>
+        <div
+          class="project bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition"
+          data-category="JavaScript"
+        >
+          <h3 class="text-xl font-bold text-teal-400">Weather App</h3>
+          <p class="text-gray-300">
+            Weather App using JavaScript that fetches real-time weather information and forecast through APIs.
+          </p>
+          <p class="text-gray-400">Technologies: JavaScript, Html, Css</p>
+          <a href="https://khushnumamalik.github.io/weather-app/" class="text-teal-400 underline">Live Demo</a>
+        </div>
+        <div
+          class="project bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition"
+          data-category="Web Design"
+        >
+          <h3 class="text-xl font-bold text-teal-400">Babylon-Engineering Solution</h3>
+          <p class="text-gray-300">Designed and developed a responsive website for Babylon Engineering Solutions, showcasing services, portfolio, and contact details with a user-friendly interface.</p>
+          <p class="text-gray-400">Technologies: JavaScript, Html, Tailwind</p>
+          <a href="https://khushnumamalik.github.io/babylone_steel/" class="text-teal-400 underline">Live Demo</a>
+        </div>
+      </div>     
+    </section>
+
+    <!--service-->
+    <section id="service" class="py-24 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-teal-400 mb-6">
+        My Services
+      </h2>
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 px-6 max-w-6xl mx-auto"
+      >
+        <div
+          class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform"
+        >
+          <h3 class="text-xl font-bold text-teal-400">Frontend Development</h3>
+          <p class="text-gray-300">
+            Building responsive websites using HTML, CSS, JavaScript, React, and
+            Tailwind.
+          </p>
+          <a href="#contact" class="block mt-4 text-teal-400 underline"
+            >Let's Work Together</a
+          >
+        </div>
+        <div
+          class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform"
+        >
+          <h3 class="text-xl font-bold text-teal-400">Website Design</h3>
+          <p class="text-gray-300">
+            Creating modern and user-friendly UI with responsive design.
+          </p>
+          <a href="#contact" class="block mt-4 text-teal-400 underline"
+            >Let's Work Together</a
+          >
+        </div>
+        <div
+          class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform"
+        >
+          <h3 class="text-xl font-bold text-teal-400">Web Maintenance</h3>
+          <p class="text-gray-300">
+            Bug fixes, performance optimization, and website updates.
+          </p>
+          <a href="#contact" class="block mt-4 text-teal-400 underline"
+            >Let's Work Together</a
+          >
+        </div>
+        <div
+          class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform"
+        >
+          <h3 class="text-xl font-bold text-teal-400">UI/UX Design</h3>
+          <p class="text-gray-300">
+            Enhancing user experience using Photoshop and design improvements.
+          </p>
+          <a href="#contact" class="block mt-4 text-teal-400 underline"
+            >Let's Work Together</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section
+      id="contact"
+      class="min-h-screen flex flex-col justify-center items-center text-center px-6 py-24"
+    >
+      <h2 class="text-3xl md:text-4xl font-bold text-teal-400 mb-6">
+        Contact Me
+      </h2>
+
+      <div
+        class="flex flex-col md:flex-row items-center justify-center gap-8 w-full max-w-4xl"
+      >
+        <!-- Contact Form -->
+        <form class="bg-gray-800 p-6 rounded-lg shadow-lg w-full md:w-1/2">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-300">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="w-full px-4 py-2 rounded bg-gray-700 text-white focus:outline-none"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-300">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="w-full px-4 py-2 rounded bg-gray-700 text-white focus:outline-none"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-300">Message</label>
+            <textarea
+              id="message"
+              rows="4"
+              class="w-full px-4 py-2 rounded bg-gray-700 text-white focus:outline-none"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-teal-500 text-gray-900 font-bold py-2 rounded hover:bg-teal-400"
+          >
+            Send Message
+          </button>
+        </form>
+
+        <!-- Google Map -->
+        <div class="w-full md:w-1/2">
+          <h3 class="text-2xl font-bold text-teal-400 mb-4">Location</h3>
+          <iframe
+            class="w-full h-64 rounded-lg shadow-lg"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.345678910394!2d77.35354051510715!3d28.62847028242007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce553c5e4f3b1%3A0x9c672e785b2f2c3a!2sSector%2062%2C%20Noida%2C%20Uttar%20Pradesh%20201309!5e0!3m2!1sen!2sin!4v1649847296375!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+
+      <div class="mt-6 text-left">
+        <p class="text-gray-300">
+          📧 Email:
+          <a href="mailto:khushnuma@example.com" class="text-teal-400"
+            >khushnuma@example.com</a
+          >
+        </p>
+        <p class="text-gray-300">📍 Address: Sector-62, Noida, Uttar Pradesh</p>
+      </div>
+
+      <div class="mt-4 flex space-x-4">
+        <a
+          href="https://github.com/khushnuma"
+          class="text-gray-300 hover:text-teal-400"
+          >GitHub</a
+        >
+        <a
+          href="https://linkedin.com/in/khushnuma"
+          class="text-gray-300 hover:text-teal-400"
+          >LinkedIn</a
+        >
+        <a
+          href="https://wa.me/1234567890"
+          class="text-gray-300 hover:text-teal-400"
+          >WhatsApp</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 text-center py-0 mt-12 shadow-lg">
+      <div class="container mx-auto">
+        
+        <h2 class="text-teal-400 text-2xl font-bold">ByteMyWork.com</h2>
+        <p class="mt-2">&copy; 2025 Khushnuma Malik. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
